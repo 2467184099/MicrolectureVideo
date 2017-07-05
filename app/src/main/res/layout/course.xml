@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#21a574"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_left_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:text="@string/textView2"
+            android:textSize="20sp"
+            android:textColor="#fff"/>
+
+        <ImageView
+            android:id="@+id/img_right_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_k" />
+    </LinearLayout>
+    <me.maxwin.view.XListView
+        android:id="@+id/lst_course"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

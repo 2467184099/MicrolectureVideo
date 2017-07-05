@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.microlecturevideo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".main.mvp.activity.weikevideo.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.mvp.activity.weikevideo.activity.ScreenActivity" />
+        <activity android:name=".main.mvp.activity.weikevideo.activity.Screen2Activity" />
+        <activity android:name=".main.mvp.activity.weikevideo.activity.Screen3Activity" />
+        <activity
+            android:name=".main.mvp.activity.weikevideo.activity.VideoWebActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
+        <activity
+            android:name=".main.mvp.activity.weikevideo.activity.VideoWebActivity1"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
+        <activity android:name=".main.mvp.activity.weikevideo.activity.ExerciseWebActivity" />
+        <activity android:name=".main.mvp.activity.weikevideo.activity.ExerciseWebListActivity" />
+        <activity android:name=".main.mvp.activity.weikevideo.activity.DownActivity" />
+        <activity android:name=".main.mvp.activity.weikevideo.activity.DownActivity1" />
+        <activity
+            android:name=".main.mvp.activity.weikevideo.activity.VideoActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
+        <activity
+            android:name=".main.mvp.activity.weikevideo.activity.VideoActivity1"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
+        <activity android:name=".main.mvp.activity.weikevideo.activity.DownLoadActivity" />
+        <!--  服务-->
+        <service android:name=".main.mvp.presenter.DownLoadService"></service>
+    </application>
+
+</manifest>
